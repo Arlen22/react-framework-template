@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export TSC_WATCHFILE=UseFsEventsWithFallbackDynamicPolling webpack"
   },
   "author": "",
   "license": "MIT",
@@ -13,6 +14,7 @@
     "compression-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.4",
     "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "json5": "^2.1.0",
     "ts-loader": "^6.1.1",
     "typescript": "^3.6.3",
@@ -22,7 +24,9 @@
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "@types/react-native": "^0.60.15",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.11.7"
   }
 }
